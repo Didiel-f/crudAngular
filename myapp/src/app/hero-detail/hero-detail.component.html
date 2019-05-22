@@ -1,0 +1,36 @@
+<div *ngIf="hero">
+
+  <h2>{{ hero.name | uppercase }} Detalles</h2>
+
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+      <label>name:
+          <input [(ngModel)]="hero.name" placeholder="name"/>
+      </label>
+  </div>
+  <div>
+      <label>patente:
+          <input [(ngModel)]="hero.patente" placeholder="name"/>
+      </label>
+  </div>
+  <div>
+      <label>modelo:
+          <input [(ngModel)]="hero.modelo" placeholder="name"/>
+      </label>
+  </div><div>
+      <label>cuenta Uber:
+          <input [(ngModel)]="hero.cuentaUber" placeholder="name"/>
+      </label>
+  </div><div>
+      <label>Clave:
+          <input [(ngModel)]="hero.clave" placeholder="name"/>
+      </label>
+  </div><div>
+      <label>Telefono:
+          <input [(ngModel)]="hero.telefono" placeholder="name"/>
+      </label>
+  </div>
+
+</div>
+<button (click)="goBack()">go back</button>
+<button (click)="save()">save</button>
